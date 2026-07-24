@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Give Review - Bhardwaj Studio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f9;
+      margin: 0;
+      padding: 15px;
+    }
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 5px;
+    }
+    p.subtitle {
+      text-align: center;
+      color: #666;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+    .card {
+      background: #ffffff;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      border: 1px solid #e0e0e0;
+      cursor: pointer;
+      transition: transform 0.1s ease, box-shadow 0.1s ease;
+    }
+    .card:active {
+      transform: scale(0.98);
+      background-color: #e8f0fe;
+    }
+    .stars {
+      color: #f4c430;
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+    .review-text {
+      font-size: 15px;
+      color: #222;
+      line-height: 1.4;
+    }
+    .btn-hint {
+      margin-top: 8px;
+      font-size: 12px;
+      color: #1a73e8;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Aapka Anubhav Kaisa Raha?</h2>
+  <p class="subtitle">Kripya koi bhi ek review chunne ke liye uspar tap karein:</p>
+
+  <script>
+    // Aapka Asli Google Review Link
+    const googleReviewUrl = "https://g.page/r/Cfr7-KvH7iK3EAE/review";
+
+    function selectAndRedirect(text) {
+      // 1. Text Copy Karna
+      navigator.clipboard.writeText(text).then(() => {
+        alert("Review copy ho gaya hai! Ab Google par paste karke post kar dein.");
+        window.location.href = googleReviewUrl;
+      }).catch(err => {
+        window.location.href = googleReviewUrl;
+      });
+    }
+  </script>
+
+  <!-- 15 Pre-written Reviews -->
+  <div class="card" onclick="selectAndRedirect('Bohot hi shandar photography aur professional service! Quality ekdam top level ki hai.')">
+    <div class="stars">⭐⭐⭐⭐⭐</div>
+    <div class="review-text">"Bohot hi shandar photography aur professional service! Quality ekdam top level ki hai."</div>
+    <div class="btn-hint">👉 Tap to Copy & Review on Google</div>
+  </div>
+
+  <div class="card" onclick="selectAndRedirect('Inka photo editing aur album design bohot zabardast hai. Full satisfaction!')">
+    <div class="stars">⭐⭐⭐⭐⭐</div>
+    <div class="review-text">"Inka photo editing aur album design bohot zabardast hai. Full satisfaction!"</div>
+    <div class="btn-hint">👉 Tap to Copy & Review on Google</div>
+  </div>
+
+  <div class="card" onclick="selectAndRedirect('Best photography studio in town. Behavior aur service dono bohot hi acchi hain.')">
+    <div class="stars">⭐⭐⭐⭐⭐</div>
+    <div class="review-text">"Best photography studio in town. Behavior aur service dono bohot hi acchi hain."</div>
+    <div class="btn-hint">👉 Tap to Copy & Review on Google</div>
+  </div>
+
+  <div class="card" onclick="selectAndRedirect('Pre-wedding photoshoot ka experience bohot badhiya raha. Highly recommended!')">
+    <div class="stars">⭐⭐⭐⭐⭐</div>
+    <div class="review-text">"Pre-wedding photoshoot ka experience bohot badhiya raha. Highly recommended!"</div>
+    <div class="btn-hint">👉 Tap to Copy & Review on Google</div>
+  </div>
+
+  <div class="card" onclick="selectAndRedirect('Time par delivery aur high-resolution photos! Kaam dekh kar dil khush ho gaya.')">
+    <div class="stars">⭐⭐⭐⭐⭐</div>
+    <div class="review-text">"Time par delivery aur high-resolution photos! Kaam dekh kar dil khush ho gaya."</div>
+    <div class="btn-hint">👉 Tap to Copy & Review on Google</div>
+  </div>
+
+  <div class="card" onclick="selectAndRedirect('Very supportive team and creative camera work. Value for money!')">
+    <div class="stars">⭐⭐⭐⭐⭐</div>
+    <div class="review-text">"Very supportive team and creative camera work. Value for money!"</div>
+    <div class="btn-hint">👉 Tap to Copy & Review on Google</div>
+  </div>
+
+  <div class="card" onclick="selectAndRedirect('Humari family function ki sabhi photos bohot khoobsurat aayi hain. Thank you!')">
+    <div class="stars">⭐⭐⭐⭐⭐</div>
+    <div class="review-text">"Humari family function ki sabhi photos bohot khoobsurat aayi hain. Thank you!"</div>
+    <div class="btn-hint">👉 Tap to Copy & Review on Google</div>
+  </div>
+
+  <div class="card" onclick="selectAndRedirect('Great lighting, perfect angles, and amazing editing skills. Must visit studio!')">
+    <div class="stars">⭐⭐⭐⭐⭐</div>
+    <div class="review-text">"Great lighting, perfect angles, and amazing editing skills. Must visit studio!"</div>
+    <div class="btn-hint">👉 Tap to Copy & Review on Google</div>
+  </div>
+
+  <div class="card" onclick="selectAndRedirect('Mera photoshoot bohot accha hua. Studio setup aur nature dono bohot accha hai.')">
+    <div class="stars">⭐⭐⭐⭐⭐</div>
+    <div class="review-text">"Mera photoshoot bohot accha hua. Studio setup aur nature dono bohot accha hai."</div>
+    <div class="btn-hint">👉 Tap to Copy & Review on Google</div>
+  </div>
+
+  <div class="card" onclick="selectAndRedirect('Awesome experience! Cinematic video and photo quality is unbeatable.')">
+    <div class="stars">⭐⭐⭐⭐⭐</div>
+    <div class="review-text">"Awesome experience! Cinematic video and photo quality is unbeatable."</div>
+    <div class="btn-hint">👉 Tap to Copy & Review on Google</div>
+  </div>
+
+  <div class="card" onclick="selectAndRedirect('Bohot hi reasonable rates mein premium quality photography milti hai yahan.')">
+    <div class="stars">⭐⭐⭐⭐⭐</div>
+    <div class="review-text">"Bohot hi reasonable rates mein premium quality photography milti hai yahan."</div>
+    <div class="btn-hint">👉 Tap to Copy & Review on Google</div>
+  </div>
+
+  <div class="card" onclick="selectAndRedirect('Very professional and polite staff. Fast service and brilliant results.')">
+    <div class="stars">⭐⭐⭐⭐⭐</div>
+    <div class="review-text">"Very professional and polite staff. Fast service and brilliant results."</div>
+    <div class="btn-hint">👉 Tap to Copy & Review on Google</div>
+  </div>
+
+  <div class="card" onclick="selectAndRedirect('Album designing aur photo clarity ekdam top class hai. 5 Stars!')">
+    <div class="stars">⭐⭐⭐⭐⭐</div>
+    <div class="review-text">"Album designing aur photo clarity ekdam top class hai. 5 Stars!"</div>
+    <div class="btn-hint">👉 Tap to Copy & Review on Google</div>
+  </div>
+
+  <div class="card" onclick="selectAndRedirect('Sabhi moments ko bohot sundar tareeqe se capture kiya gaya hai. Excellent work!')">
+    <div class="stars">⭐⭐⭐⭐⭐</div>
+    <div class="review-text">"Sabhi moments ko bohot sundar tareeqe se capture kiya gaya hai. Excellent work!"</div>
+    <div class="btn-hint">👉 Tap to Copy & Review on Google</div>
+  </div>
+
+  <div class="card" onclick="selectAndRedirect('Mujhe aur meri family ko inka kaam bohot pasand aaya. Highly satisfied!')">
+    <div class="stars">⭐⭐⭐⭐⭐</div>
+    <div class="review-text">"Mujhe aur meri family ko inka kaam bohot pasand aaya. Highly satisfied!"</div>
+    <div class="btn-hint">👉 Tap to Copy & Review on Google</div>
+  </div>
+
+</div>
+
+</body>
+</html>
